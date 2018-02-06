@@ -1,4 +1,4 @@
-# opensecrets-js
+# jarvice-node
 
 A NodeJS library for the Nimbix Jarvice cloud computing platform
 
