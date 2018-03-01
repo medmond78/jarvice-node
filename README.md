@@ -8,6 +8,12 @@ A NodeJS library for the Nimbix Jarvice cloud computing platform
 ### Credentials
 The library looks for your API credentials environmental variables 'username' and 'apikey'
 
+```
+    {username: process.env.username,
+    apikey: process.env.apikey}
+	
+```
+
 ### Methods/Usage
 To use the library, you must include it:
 `var jarvice = require("./lib/jarvice.js");`
