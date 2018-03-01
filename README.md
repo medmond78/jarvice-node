@@ -21,7 +21,47 @@ To use the library, you must include it:
 The following methods are currently available, note that all callbacks are of the form: `function(error, results)`
 See [Jarvice API docs](https://jarvice.readthedocs.io/en/latest/api/) for description of the required inputs and outputs of the various methods.
 
-#### Jobs
+### Example
+```
+
+\\ Required the client...
+var jarvice = require("./lib/jarvice.js");
+
+\\ Define the job submission details...
+var options = {
+	url: 'https://api.jarvice.com/jarvice/submit',
+	method: 'POST',
+	port: 443,
+	body:{"app": "migenius-irayviewer",
+	  "staging": false,
+	  "checkedout": false,
+	  "application": {
+	    "command": "irayviewer",
+	    "geometry": "1520x695"
+	  },
+	  "machine": {
+	    "type": "ng4",
+	    "nodes": 1
+	  },
+	  "vault": {
+	    "name": "drop.jarvice.com",
+	    "force": false,
+	    "readonly": false
+	  },
+	  "user": {
+	    "username": process.env.username, 
+	    "apikey": process.env.apikey
+	  }
+	},
+	json: true,
+};
+
+\\ Submit the job!
+jarvice.submitJob(options);
+
+```
+
+#### Methods
 ```
 //jarvice.submitJob();
 
