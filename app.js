@@ -6,6 +6,7 @@ console.log('Working...');
 console.log(process.env.username)
 console.log(process.env.apikey)
 
+
 var options = {
 	url: 'https://api.jarvice.com/jarvice/submit',
 	method: 'POST',
@@ -39,22 +40,22 @@ jarvice.submitJob(options);
 
 //jarvice.getJobs();
 
-//jarvice.jobStatus(359982);
+//jarvice.tail(367910);
 
 
-//jarvice.shutdownJob(xx);   // graceful
+//jarvice.shutdownJob(367910);   // graceful
 
-//jarvice.terminateJob()   // Immediate
+//jarvice.terminateJob(368431)   // Immediate
 
-//jarvice.connect(xx);
+//jarvice.connect(367910);
 
 //jarvice.tail(xx);
 
-//jarvice.info(xx);
+//jarvice.info(367910);
 
 //jarvice.getMachines();
 
-//jarvice.getOutput(289503);
+//jarvice.getOutput(367910);
 
 //jarvice.getApps();
 
