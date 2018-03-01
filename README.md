@@ -10,11 +10,11 @@ The library looks for your API credentials environmental variables 'username' an
 
 ### Methods/Usage
 To use the library, you must include it:
-var jarvice = require("./lib/jarvice.js");
+`var jarvice = require("./lib/jarvice.js");`
 
 The following methods are currently available, note that all callbacks are of the form: `function(error, results)`
 #### Jobs
-jarvice.getJobs();
+`jarvice.getJobs();`
 
 //jarvice.submitJob();
 
