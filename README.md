@@ -9,8 +9,8 @@ A NodeJS library for the Nimbix Jarvice cloud computing platform
 The library looks for your API credentials environmental variables 'username' and 'apikey'
 
 ```
-    {username: process.env.username,
-    apikey: process.env.apikey}
+{username: process.env.username,
+apikey: process.env.apikey}
 	
 ```
 
@@ -19,15 +19,15 @@ To use the library, you must include it:
 `var jarvice = require("./lib/jarvice.js");`
 
 The following methods are currently available, note that all callbacks are of the form: `function(error, results)`
-#### Jobs
-`jarvice.getJobs();`
+See [Jarvice API docs](https://jarvice.readthedocs.io/en/latest/api/) for description of the required inputs and outputs of the various methods.
 
+#### Jobs
+```
 //jarvice.submitJob();
 
 //jarvice.getJobs();
 
 //jarvice.jobStatus(359982);
-
 
 //jarvice.shutdownJob(xx);   // graceful
 
@@ -46,3 +46,5 @@ The following methods are currently available, note that all callbacks are of th
 //jarvice.getApps();
 
 //jarvice.getScreenshot(297527);
+
+```
